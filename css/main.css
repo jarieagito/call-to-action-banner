@@ -14,8 +14,21 @@ body {
 
 .banner {
   max-height: 500px;
-  position: relative;
   overflow: hidden;
+  position: relative;
+}
+
+.everything {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 45em;
+  max-height: 500px;
+  width: 100%;
 }
 
 .img-flex {
@@ -23,57 +36,47 @@ body {
   width: 100%;
 }
 
-.banner-img {
-  position: absolute;
-  display: flex;
+.content {
+  text-align: left;
+  padding: 1.5rem;
 }
 
 .img-second {
-  position: absolute;
-  max-width: 45em;
-  left: 50%;
-  bottom: 1.5rem;
-  margin-right: .2em;
-}
-
-.content {
-  position: absolute;
-  display: inline-block;
-  max-width: 45em;
-  left: 50%;
-  top: 1.5rem;
-  transform: translate(-45%);
-  justify-content: space-between;
-  padding: 0 1.5rem;
-  margin: 0;
-  align-items: center;
+  width: 400px;
+  padding: 1.2rem;
 }
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 0;
+  line-height: 1.2;
+  margin-bottom: .2em;
   margin-top: 0;
+  max-width: 78%;
 }
 
 p {
   margin: 0;
   font-size: 1.5rem;
+  margin-bottom: 1em;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
 }
 
 .btn {
-  border: 3px solid #000;
-  padding: .5em;
-  background-color: #000;
+  border: 3px solid #313131;
+  padding: .9rem 1rem;
+  background-color: #313131;
   border-radius: 10px;
 }
 
 .btn-big {
+  font-family: Roboto, sans-serif;
   font-size: 1.5rem;
-  color: #fff;
+  color: #f5f5f5;
   text-decoration: none;
 }
 
 .btn:hover {
-  border: 3px solid #45433f;
-  background-color: #45433f;
+  border: 3px solid #000;
+  background-color: #000;
 }
